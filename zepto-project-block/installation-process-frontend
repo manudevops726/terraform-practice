@@ -1,0 +1,18 @@
+# 1. Create React app (if not created yet)
+npx create-react-app zepto-frontend
+
+# 2. Change directory to frontend folder
+cd zepto-frontend
+
+# 3. Install axios for API calls
+npm install axios
+
+# 4. (Optional) Create .env file manually with:
+# PORT=3000
+# REACT_APP_API_URL=http://<your-backend-ip-or-domain>:3001
+
+# 5. Start the frontend development server
+npm start
+
+# 6. (Optional) To create a production build
+npm run build
