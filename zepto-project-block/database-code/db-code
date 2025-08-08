@@ -1,0 +1,19 @@
+-- Select your database (replace zeptodb with your DB name)
+USE zeptodb;
+
+-- Create Product table if not exists
+CREATE TABLE IF NOT EXISTS Product (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  image VARCHAR(255),
+  price INT,
+  addedBy VARCHAR(255)
+);
+
+-- Insert initial products
+INSERT INTO Product (name, image, price, addedBy) VALUES
+('Banana', 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg', 10, 'system'),
+('Cranberries', 'https://upload.wikimedia.org/wikipedia/commons/1/19/Vaccinium_macrocarpon_1.jpg', 25, 'system'),
+('Spinach', 'https://upload.wikimedia.org/wikipedia/commons/f/fb/Spinacia_oleracea_Spinazie_bloeiend.jpg', 15, 'system'),
+('Tomato', 'https://upload.wikimedia.org/wikipedia/commons/8/88/Bright_red_tomato_and_cross_section02.jpg', 12, 'system'),
+('Rose', 'https://upload.wikimedia.org/wikipedia/commons/b/bf/Rose_Red_Blossom.jpg', 20, 'system');
