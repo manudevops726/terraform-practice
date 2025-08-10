@@ -4,7 +4,7 @@ async function seed() {
   await sequelize.sync({ force: false }); // ensure tables exist, but don't drop data
 
   const products = [
-    { name: 'Banana', image: 'https://link-to-banana-image.jpg', price: 10 },
+    { name: 'Banana', image: 'https://images.heb.com/is/image/HEBGrocery/000377497', price: 10 },
     { name: 'Cranberries', image: 'https://link-to-cranberries.jpg', price: 25 },
     { name: 'Spinach', image: 'https://link-to-spinach.jpg', price: 15 },
     { name: 'Tomato', image: 'https://link-to-tomato.jpg', price: 12 },
